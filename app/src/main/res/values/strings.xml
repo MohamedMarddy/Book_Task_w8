@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Book_Task</string>
+    <string name="books">Books</string>
+    <string name="notification">notification</string>
+    <string name="menu_char">menu_char</string>
+    <string name="want_to_read">want to read</string>
+    <string name="by_author">by author</string>
+    <string name="movie_title">The Sword</string>
+    <string name="person_name">Mohamed Marddy</string>
+    <string name="reviews">Reviews</string>
+    <string name="Favourite">Favourite</string>
+    <string name="favourite">Favourite</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="settings">settings</string>
+    <string name="reviewsClick">Reviews Clicked</string>
+    <string name="favClick">Favourite Clicked</string>
+    <string name="searchClick">search Clicked\n</string>
+    <string name="profileClick">profile clicked</string>
+    <string name="settings_clicked">Settings clicked</string>
+</resources>

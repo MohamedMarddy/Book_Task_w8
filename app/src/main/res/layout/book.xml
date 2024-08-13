@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/padding_8dp"
+    android:layout_marginTop="@dimen/padding_16dp"
+    android:layout_marginEnd="@dimen/padding_16dp">
+
+    <ImageView
+        android:id="@+id/bookTxt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingTop="@dimen/padding_16dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        android:paddingBottom="@dimen/padding_16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        style="@style/BookTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_title"
+        app:layout_constraintEnd_toStartOf="@+id/readBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bookTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/authorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/by_author"
+        app:layout_constraintEnd_toStartOf="@+id/readBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bookTxt"
+        app:layout_constraintTop_toBottomOf="@+id/titleTxt" />
+
+    <Button
+        android:id="@+id/readBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/orange"
+        android:padding="@dimen/padding_16dp"
+        android:text="@string/want_to_read"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/closeBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_8dp"
+        android:numStars="5"
+        android:progressTint="@color/orange"
+        style="?android:attr/ratingBarStyleSmall"
+
+        app:layout_constraintEnd_toEndOf="@+id/readBtn"
+        app:layout_constraintStart_toStartOf="@+id/readBtn"
+        app:layout_constraintTop_toBottomOf="@+id/readBtn" />
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
